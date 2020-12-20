@@ -19,6 +19,8 @@ package com.example.android.dessertpusher
 import android.app.Application
 import timber.log.Timber
 
+// COMPLETED (02) Copy over the Application class, called PusherApplication, from the course
+// COMPLETED (04) In the PusherApplication class, initialize Timber by planting a Tree
 class PusherApplication : Application() {
 
     override fun onCreate() {
