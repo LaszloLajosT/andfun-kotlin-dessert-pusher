@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
             onDessertClicked()
         }
 
+        // COMPLETED (02) Create a DessertTimer
         // Setup dessertTimer
         dessertTimer = DessertTimer()
 
@@ -154,9 +155,12 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     }
 
     /** Lifecycle Methods **/
+    // COMPLETED (03) Start the DessertTimer in onStart and stop the timer in onStop
 
     override fun onStart() {
         super.onStart()
+        dessertTimer.startTimer()
+        dessertTimer.stopTimer()
         Timber.i("onStart Called")
         dessertTimer.startTimer()
     }
