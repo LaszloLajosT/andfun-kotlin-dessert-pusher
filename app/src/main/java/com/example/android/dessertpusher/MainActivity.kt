@@ -75,6 +75,8 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
             onDessertClicked()
         }
 
+        // COMPLETED (04) Pass in 'this' MainActivity's lifecycle so that it is observed
+        // Setup dessertTimer
         // Setup dessertTimer, passing in the lifecycle
         dessertTimer = DessertTimer(this.lifecycle)
 
@@ -154,6 +156,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     }
 
     /** Lifecycle Methods **/
+    // COMPLETED (05) Remove the calls to startTimer and stopTimer here; you shouldn't need them anymore!
     override fun onStart() {
         super.onStart()
         Timber.i("onStart Called")
