@@ -175,7 +175,6 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onStop() {
         super.onStop()
         Timber.i("onStop Called")
-
     }
 
     override fun onDestroy() {
